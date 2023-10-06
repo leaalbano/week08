@@ -8,10 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var firstInput: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let firstInputPlaceholderString = NSLocalizedString(
+            "Your name here",
+            comment: "Placeholder text for the name input"
+        )
+        self.firstInput.placeholder = firstInputPlaceholderString
     }
 
 
